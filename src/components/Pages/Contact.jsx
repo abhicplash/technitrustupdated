@@ -32,7 +32,7 @@ const Contact = () => {
       return;
     }
 
-    const phoneNumber = "+918547606322"; 
+    const phoneNumber = "+971521460459"; 
     const text = `Name: ${name}%0AContact Number: ${number}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${text}`;

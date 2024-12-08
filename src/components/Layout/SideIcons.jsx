@@ -35,7 +35,7 @@ const SideIcons = () => {
     <div className="icon-container">
       <div className="iconwrapper">
         <a
-          href="https://wa.me/+971542791548/?text=let me know more about the services provided by *Techni Trust*"
+          href="https://wa.me/+971521460459/?text=let me know more about the services provided by *Techni Trust*"
           target="_blank"
           rel="noreferrer"
           title="Whatsapp"
@@ -44,12 +44,22 @@ const SideIcons = () => {
         </a>
       </div>
       <div className="iconwrapper">
-        <a href="mailto:info@dimark.ae" target="_blank" title="Email"   rel="noreferrer">
+        <a
+          href="mailto:info@technitech.ae"
+          target="_blank"
+          title="Email"
+          rel="noreferrer"
+        >
           <GiEnvelope />
         </a>
       </div>
       <div className="iconwrapper">
-        <a href="tel:+971542791548" target="_blank" title="Call"   rel="noreferrer">
+        <a
+          href="tel:+971507379659"
+          target="_blank"
+          title="Call"
+          rel="noreferrer"
+        >
           <RiPhoneFill />
         </a>
       </div>
