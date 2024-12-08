@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 import Layout from "../Layout/Layout";
 import PageTop from "../Layout/PageTop";
@@ -12,6 +12,33 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    number: "",
+    email: "",
+    subject: "",
+    message: ""
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSendMessage = () => {
+    const { name, number, email, subject, message } = formData;
+
+    if (!name || !number || !email || !subject || !message) {
+      alert("Please fill out all fields before sending the message.");
+      return;
+    }
+
+    const phoneNumber = "+918547606322"; 
+    const text = `Name: ${name}%0AContact Number: ${number}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
+
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${text}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <Layout>
       <div className="contactContainer">
@@ -47,12 +74,42 @@ const Contact = () => {
         </h3>
 
         <div className="contactForm">
-          <input type="text" name="name" placeholder="Your Name" />
-          <input type="text" name="number" placeholder="Your Number" />
-          <input type="text" name="subject" placeholder="Subject" />
-          <input type="email" name="email" placeholder="Your Email" />
-          <textarea name="message" id="" placeholder="Your Message"></textarea>
-          <button>send message</button>
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="Your Name"
+          />
+          <input
+            type="text"
+            name="number"
+            value={formData.number}
+            onChange={handleChange}
+            placeholder="Your Number"
+          />
+          <input
+            type="text"
+            name="subject"
+            value={formData.subject}
+            onChange={handleChange}
+            placeholder="Subject"
+          />
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="Your Email"
+          />
+          <textarea
+            name="message"
+            id=""
+            value={formData.message}
+            onChange={handleChange}
+            placeholder="Your Message"
+          ></textarea>
+          <button onClick={handleSendMessage}>send message</button>
         </div>
         <div className="contactLinks">
           <h2>Connect with us !</h2>

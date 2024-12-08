@@ -21,11 +21,11 @@ const Footer = () => {
             <h3>Reach Us</h3>
             <div className="footerdetails">
               <TbPhoneCall />
-              <span>+971-87654321</span>
+              <span>+971 55 422 8284</span>
             </div>
             <div className="footerdetails">
               <BiSolidEnvelope />
-              <span>info@demo.com</span>
+              <span>info@technitech.ae</span>
             </div>
             <div className="footerdetails">
               <IoLocation />
