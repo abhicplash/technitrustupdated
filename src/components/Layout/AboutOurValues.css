@@ -1,0 +1,132 @@
+.AboutOurValuesContainer {
+  width: 100%;
+  min-height: 80vh;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.visionCard {
+  width: 63%;
+  height: 46vh;
+  background-color: #ffffff21;
+  border: 1px solid var(--orange);
+  /* border: 1px solid var(--white); */
+  border-radius: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  /* color: black; */
+  color: var(--white);
+  /* background: linear-gradient(to bottom, #fefeff, grey); */
+}
+.visionImg {
+  border: 5px solid var(--orange);
+  border-radius: 100%;
+  width: 35%;
+}
+.visionDetails {
+  display: flex;
+  flex-direction: column;
+  /* border-right: 5px solid var(--white); */
+  border-right: 5px solid var(--orange);
+  width: 50%;
+  padding-right: 2rem;
+  text-align: end;
+  margin-right: 2rem;
+}
+.visionHead {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--orange);
+}
+
+.ourValuesWrapper {
+  width: 100%;
+  height: 100%;
+  background-color: var(--gray);
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.vCard {
+  width: 16rem;
+  height: 17rem;
+  background: linear-gradient(to right, black, var(--gray));
+
+  /* background: linear-gradient(to bottom right, black, var(--gray)); */
+
+  /* background-color: black; */
+  border: 1px solid var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.VcardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.valueCardIcon {
+  color: var(--orange);
+  font-size: 2.5rem;
+}
+.valueCardName {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.valueCardDesc {
+  /* border: 1px solid; */
+  width: 90%;
+}
+.ourvaluesHead{
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: var(--orange);
+}
+@media (max-width: 768px) {
+  .ourValuesWrapper {
+    padding: 2rem 0;
+  }
+  .visionCard {
+    flex-direction: column;
+    width: 14rem;
+    height: 100%;
+    padding: 2rem 1rem;
+    /* padding: 2rem 0;  */
+    /* height: 80vh; */
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    text-align: center;
+    /* padding-bottom: 1rem; */
+  }
+
+  .visionImg {
+    width: 95%;
+  }
+  .visionPara {
+    width: 99%;
+    font-size: 1rem;
+  }
+  .visionDetails {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+}

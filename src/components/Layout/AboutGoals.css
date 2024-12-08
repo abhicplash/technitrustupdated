@@ -1,0 +1,101 @@
+.AboutGoalsContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+.goalCard {
+  width: 16rem;
+  height: 16rem;
+  /* background-color: var(--gray); */
+  background: linear-gradient(to right, black, var(--gray));
+
+  /* background: linear-gradient(to bottom right, black, var(--gray)); */
+  display: flex;
+  border: 1px solid var(--black);
+  /* border: 1px solid var(--orange); */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  text-align: center;
+  padding: 1.2rem 1rem;
+  /* border-radius: 10px; */
+}
+.goalCard:hover{
+    transform: scale(105%);
+}
+.goalPara {
+  width: 90%;
+  /* font-size: 1.05rem; */
+  color: var(--yellow);
+}
+.goalPara .icon {
+  font-size: 2.5rem;
+  color: var(--orange);
+  text-align: center;
+}
+.goalsCardList {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.goalMainIcon {
+  font-size: 3rem;
+  color: var(--orange);
+}
+.goalIcon {
+  font-size: 2.5rem;
+  color: var(--orange);
+
+  height: 2.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.goalPara {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  width: 97%;
+}
+.goalHead {
+  font-size: 1.3rem;
+  width: 75%;
+  font-weight: 600;
+}
+.goalParaIntro {
+  text-align: left;
+  width: 90%;
+  /* font-size: 1.2rem; */
+}
+.goalParaIntroMain {
+  font-size: 1.2rem;
+  color: var(--yellow);
+  text-align: center;
+  width: 60%;
+}
+.ParaOnGoal{
+    font-size: 1.4rem;
+}
+@media (max-width: 768px) {
+  .goalCard {
+    text-align: center;
+  }
+  .goalsCardList {
+    width: 90%;
+  }
+  .AboutGoalsContainer {
+    padding: 2rem 0;
+  }
+  .goalParaIntroMain {
+    width: 95%;
+  }
+}

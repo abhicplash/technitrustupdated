@@ -1,0 +1,38 @@
+.serviceswrapper {
+  width: 100%;
+  /* min-height: 100vh; */
+  color: var(--white);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+.subhead {
+  text-transform: capitalize;
+  color: var(--white);
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+.mainhead {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: var(--orange);
+}
+.desc {
+  font-size: 1.2rem;
+}
+.serviceLists {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 5rem 0;
+}
+.serviceLists a {
+  color: var(--black);
+}

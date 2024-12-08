@@ -1,0 +1,28 @@
+.SingleServicePageContainer {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem 0;
+  background: linear-gradient( to right,var(--gray),black);
+
+}
+.SingleServicePageContainer h1 {
+  text-align: center;
+  color: var(--orange);
+}
+.ServicesCollectionWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.HomeserviceCard-container {
+  border: 1px solid var(--orange);
+}
+.logo{
+  width: 15rem;
+}
+.SingleServicePageContainer .technitrust{
+  font-size: 3rem;
+}

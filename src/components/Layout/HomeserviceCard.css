@@ -1,0 +1,46 @@
+.HomeserviceCard-container {
+  width: 16rem;
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: start;
+  /* background-color: #fff; */
+  /* border-radius: 15px; */
+  background: linear-gradient(to bottom, var(--white), var(--orange));
+}
+.servicecardImg {
+  width: 16rem;
+  height: 13rem;
+  /* border-top-left-radius: 15px;
+  border-top-right-radius: 15px; */
+}
+.serviceCardName {
+  font-size: 1.2rem;
+  /* border: 1px solid; */
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  text-transform: capitalize;
+  text-align: center;
+  justify-content: center;
+}
+
+.linktoservice {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+.ServiceCardInfowrapper {
+  display: flex;
+  flex-direction: column;
+  /* padding: 1rem; */
+  gap: 0.2rem;
+}
+.serviceCardPara {
+  text-align: center;
+  /* border: 1px solid; */
+  width: 100%;
+}

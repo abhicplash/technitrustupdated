@@ -1,0 +1,25 @@
+.PNF-container {
+  background: url("../../Assets/Home/40.jpg");
+  background-position: center;
+  background-size: cover;
+  /* width: 100%; */
+  /* min-height: 100vh; */
+}
+.wrapper {
+  background: linear-gradient(to top, #363839f6, #070707);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.wrapper h1{
+    background: linear-gradient(30deg, #ff7300, #ffde55);
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem;
+    text-align: center;
+    text-transform: capitalize;
+}
